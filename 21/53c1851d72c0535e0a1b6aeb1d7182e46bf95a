@@ -1,0 +1,24 @@
+regression-test/suites/inverted_index_p0/test_score_on_agg_mor_table.groovy
+  s_c1237058ca51ce::t_47106c28c5ca62 1-63
+fe/fe-core/src/test/java/org/apache/doris/nereids/rules/analysis/CheckScoreTableTypeTest.java
+  s_c1237058ca51ce::t_3c163a92e7bdaf 1-83
+fe/fe-core/src/main/java/org/apache/doris/nereids/rules/analysis/CheckAnalysis.java
+  s_c1237058ca51ce::t_3c163a92e7bdaf 20,34,43,132,146-159
+  s_c1237058ca51ce::t_52e82583716fb9 160-161
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "2153c1851d72c0535e0a1b6aeb1d7182e46bf95a",
+  "prompts": {},
+  "sessions": {
+    "s_c1237058ca51ce": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a08902-11bd-7380-88cf-28121067e95f",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
