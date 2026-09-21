@@ -1,0 +1,21 @@
+fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/CheckScoreUsage.java
+  s_be34a1bc5ffcdd::t_b61859b292dc1d 48-49,54
+regression-test/suites/inverted_index_p0/test_score_on_agg_mor_table.groovy
+  s_be34a1bc5ffcdd::t_edeef761569e32 48-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6749ee2c6917d87ffe62c7a57f3d156ce092ad2a",
+  "prompts": {},
+  "sessions": {
+    "s_be34a1bc5ffcdd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0bdd7-8e62-7aa1-93a0-abc6be20b2c5",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
