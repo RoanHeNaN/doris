@@ -1,0 +1,21 @@
+fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/CheckScoreUsage.java
+  s_be34a1bc5ffcdd::t_d8557b69cd2e56 45-57,61,66-69,71-72
+fe/fe-core/src/main/java/org/apache/doris/nereids/jobs/executor/Rewriter.java
+  s_be34a1bc5ffcdd::t_d8557b69cd2e56 719-721
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "dad1a0d57e0d48d11dc2e11e05f3d32d7621126a",
+  "prompts": {},
+  "sessions": {
+    "s_be34a1bc5ffcdd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0bdd7-8e62-7aa1-93a0-abc6be20b2c5",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
