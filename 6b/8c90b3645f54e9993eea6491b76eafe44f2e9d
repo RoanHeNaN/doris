@@ -1,0 +1,19 @@
+fe/fe-core/src/test/java/org/apache/doris/nereids/rules/analysis/CheckScoreTableTypeTest.java
+  s_be34a1bc5ffcdd::t_060932a361d8a0 21,67-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6b8c90b3645f54e9993eea6491b76eafe44f2e9d",
+  "prompts": {},
+  "sessions": {
+    "s_be34a1bc5ffcdd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0bdd7-8e62-7aa1-93a0-abc6be20b2c5",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
