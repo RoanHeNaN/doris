@@ -1,0 +1,19 @@
+docs/ann-global-routing-research.md
+  s_dd13fd15c8409e::t_4871171422cfae 1-295
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "3dd84c29dae88991cf0eca598fa7fc102e5c31c2",
+  "prompts": {},
+  "sessions": {
+    "s_dd13fd15c8409e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0c376-344f-7713-a4fe-a4e575635643",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
