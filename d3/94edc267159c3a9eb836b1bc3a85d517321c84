@@ -1,0 +1,77 @@
+be/src/cloud/pb_convert.cpp
+  s_11ff7df5459586::t_1be1d1db677afd 484,549,627,693
+fe/fe-core/src/main/java/org/apache/doris/master/ReportHandler.java
+  s_11ff7df5459586::t_d235fa5bfb19d7 1085-1086
+fe/fe-core/src/main/java/org/apache/doris/task/CreateReplicaTask.java
+  s_11ff7df5459586::t_d235fa5bfb19d7 117,160,211,402
+gensrc/thrift/AgentService.thrift
+  s_11ff7df5459586::t_0b4fc2f527462a 60
+  s_11ff7df5459586::t_541bfdce03adac 61
+be/src/storage/tablet/tablet_schema.cpp
+  s_11ff7df5459586::t_541bfdce03adac 1102,1258,1436,1813
+fe/fe-core/src/test/java/org/apache/doris/common/PropertyAnalyzerTest.java
+  s_11ff7df5459586::t_120b6eae43f1f7 57-69
+  s_11ff7df5459586::t_4176abbb78d1f5 56
+regression-test/suites/ann_index_p0/ann_build_on_compaction.groovy
+  s_11ff7df5459586::t_9b3796762ca63a 52
+  s_11ff7df5459586::t_705d1afb85e3fa 30-42
+  s_11ff7df5459586::t_6ab41714c91661 1-29,43-48,50,53-87,89-96
+  s_11ff7df5459586::t_61a0c6da34c5a2 49,51
+  s_11ff7df5459586::t_752020cf67ecde 88
+fe/fe-core/src/main/java/org/apache/doris/alter/RollupJobV2.java
+  s_11ff7df5459586::t_d235fa5bfb19d7 261
+fe/fe-core/src/main/java/org/apache/doris/backup/RestoreJob.java
+  s_11ff7df5459586::t_d235fa5bfb19d7 1480
+fe/fe-core/src/main/java/org/apache/doris/alter/SchemaChangeJobV2.java
+  s_11ff7df5459586::t_d235fa5bfb19d7 324
+fe/fe-core/src/main/java/org/apache/doris/catalog/TableProperty.java
+  s_11ff7df5459586::t_f095e3229bb01c 114,180,469-478,988
+be/src/storage/compaction/compaction.cpp
+  s_11ff7df5459586::t_541bfdce03adac 640-643
+fe/fe-core/src/test/java/org/apache/doris/task/AgentTaskTest.java
+  s_11ff7df5459586::t_3d7e069fab864a 124,176
+  s_11ff7df5459586::t_bb626d664d8f13 183,198,221,239,254,276
+fe/fe-core/src/main/java/org/apache/doris/common/util/PropertyAnalyzer.java
+  s_11ff7df5459586::t_120b6eae43f1f7 972-982
+  s_11ff7df5459586::t_f095e3229bb01c 183
+be/test/storage/tablet/tablet_schema_test.cpp
+  s_11ff7df5459586::t_0a542f07bfdd28 1060-1073
+be/src/storage/tablet/tablet_schema.h
+  s_11ff7df5459586::t_0b4fc2f527462a 517
+  s_11ff7df5459586::t_541bfdce03adac 518,813
+fe/fe-core/src/main/java/org/apache/doris/catalog/Env.java
+  s_11ff7df5459586::t_9b3796762ca63a 4204-4206
+be/src/storage/segment/vertical_segment_writer.cpp
+  s_11ff7df5459586::t_63510954475ff9 184,186-188,222
+  s_11ff7df5459586::t_541bfdce03adac 185,223
+gensrc/proto/olap_file.proto
+  s_11ff7df5459586::t_541bfdce03adac 590,653
+  s_11ff7df5459586::t_0b4fc2f527462a 589
+fe/fe-core/src/main/java/org/apache/doris/catalog/OlapTable.java
+  s_11ff7df5459586::t_f095e3229bb01c 2911-2921
+be/src/storage/tablet/tablet_meta.cpp
+  s_11ff7df5459586::t_541bfdce03adac 615-617
+fe/fe-core/src/main/java/org/apache/doris/datasource/InternalCatalog.java
+  s_11ff7df5459586::t_9b3796762ca63a 1629-1632
+  s_11ff7df5459586::t_120b6eae43f1f7 2946
+  s_11ff7df5459586::t_d235fa5bfb19d7 2325
+fe/fe-core/src/test/java/org/apache/doris/catalog/TablePropertyTest.java
+  s_11ff7df5459586::t_7955dd2a28c217 38-39
+  s_11ff7df5459586::t_46789f4c94a591 36-37,40-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d394edc267159c3a9eb836b1bc3a85d517321c84",
+  "prompts": {},
+  "sessions": {
+    "s_11ff7df5459586": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0ec98-b2de-71e0-9ab3-13c07f1eddc9",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
