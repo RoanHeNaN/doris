@@ -1,0 +1,19 @@
+regression-test/suites/ann_index_p0/ann_build_on_compaction.groovy
+  s_11ff7df5459586::t_4044255596193c 68-72,81-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "bff4d082c06f70c28debdc2e7b52a125e188f179",
+  "prompts": {},
+  "sessions": {
+    "s_11ff7df5459586": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0ec98-b2de-71e0-9ab3-13c07f1eddc9",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
