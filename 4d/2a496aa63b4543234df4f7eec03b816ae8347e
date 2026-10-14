@@ -1,0 +1,21 @@
+regression-test/data/query_p0/system/test_table_properties.out
+  s_789b09e3dd1114::t_b8b750408add20 3
+  s_789b09e3dd1114::t_14b4fd0e294cd5 238
+  s_789b09e3dd1114::t_2a7795184d555f 32,72,112,154,194
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4d2a496aa63b4543234df4f7eec03b816ae8347e",
+  "prompts": {},
+  "sessions": {
+    "s_789b09e3dd1114": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1383b-1da3-7150-86c4-97a27df9017d",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
