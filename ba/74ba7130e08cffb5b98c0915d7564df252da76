@@ -1,0 +1,23 @@
+fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/CheckScoreUsage.java
+  s_b9ce18b53214b5::t_9c50c7fb8058d5 45,47-50,53-55,57-58,61-66,68,83,96-99,103
+  s_b9ce18b53214b5::t_fae9b2011faded 51-52
+fe/fe-core/src/test/java/org/apache/doris/nereids/rules/analysis/CheckScoreTableTypeTest.java
+  s_b9ce18b53214b5::t_2fa04db7b56798 31-32,36,39-41,47-49,65-68,81-83
+  s_b9ce18b53214b5::t_f63ffce34f00d0 21,23-30,84-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ba74ba7130e08cffb5b98c0915d7564df252da76",
+  "prompts": {},
+  "sessions": {
+    "s_b9ce18b53214b5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17c3f-3c35-75b2-91f8-b247c16b6557",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
