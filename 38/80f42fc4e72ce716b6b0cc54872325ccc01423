@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "3880f42fc4e72ce716b6b0cc54872325ccc01423",
+  "prompts": {},
+  "humans": {
+    "h_b00006bbf0b134": {
+      "author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
