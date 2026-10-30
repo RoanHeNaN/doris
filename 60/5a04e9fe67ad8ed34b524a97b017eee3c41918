@@ -1,0 +1,26 @@
+fe/fe-core/src/test/java/org/apache/doris/nereids/parser/NereidsParserTest.java
+  s_0759bd3befd609::t_996d3a84a74065 720-723
+fe/fe-core/src/test/java/org/apache/doris/nereids/util/UtilsTest.java
+  s_0759bd3befd609::t_5e3b5fc22f6070 20-27,30-33,39-61
+fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java
+  s_0759bd3befd609::t_996d3a84a74065 2264-2271,2276,2288,2298,2378-2380
+  s_0759bd3befd609::t_6944c889298f8d 2381
+fe/fe-core/src/main/java/org/apache/doris/nereids/util/Utils.java
+  s_0759bd3befd609::t_996d3a84a74065 20,692-699
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "605a04e9fe67ad8ed34b524a97b017eee3c41918",
+  "prompts": {},
+  "sessions": {
+    "s_0759bd3befd609": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a18b89-7882-7f33-b4d5-e26532a886b7",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
