@@ -1,0 +1,37 @@
+fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowTableCommand.java
+  s_cfd50270b2eb22::t_c1d153c3cbe585 137
+fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowColumnsCommand.java
+  s_cfd50270b2eb22::t_c1d153c3cbe585 170
+fe/fe-core/src/test/java/org/apache/doris/qe/StmtExecutorInternalQueryTest.java
+  s_cfd50270b2eb22::t_72177c4ba01a7f 120-145
+  s_cfd50270b2eb22::t_4bcbbcf9e27373 21,26-27,31,39-40,146-208
+fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowDatabasesCommand.java
+  s_cfd50270b2eb22::t_c1d153c3cbe585 114
+fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java
+  s_cfd50270b2eb22::t_3db6980f82842c 2457-2460
+  s_cfd50270b2eb22::t_c1d153c3cbe585 2296,2300,2302-2323
+  s_cfd50270b2eb22::t_aed9e6a19d4d70 2295,2297-2299,2301,2324,2329,2342,2352
+fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowTableStatusCommand.java
+  s_cfd50270b2eb22::t_c1d153c3cbe585 186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f1fa6df7f2db3897c9eb484ee06b6251719631f7",
+  "prompts": {},
+  "humans": {
+    "h_b00006bbf0b134": {
+      "author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  },
+  "sessions": {
+    "s_cfd50270b2eb22": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a18c4e-74b5-7550-a106-5479c9ebf310",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
