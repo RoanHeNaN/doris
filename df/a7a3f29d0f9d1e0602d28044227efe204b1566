@@ -1,0 +1,33 @@
+fe/fe-core/src/main/java/org/apache/doris/nereids/util/Utils.java
+  s_cfd50270b2eb22::t_3db6980f82842c 695-699,706-710
+  s_cfd50270b2eb22::t_72177c4ba01a7f 38
+  s_cfd50270b2eb22::t_a9379fb2e1e875 694
+fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java
+  s_cfd50270b2eb22::t_3db6980f82842c 2435-2438
+fe/fe-core/src/test/java/org/apache/doris/qe/StmtExecutorInternalQueryTest.java
+  s_cfd50270b2eb22::t_72177c4ba01a7f 114-139
+fe/fe-core/src/test/java/org/apache/doris/nereids/util/UtilsTest.java
+  s_cfd50270b2eb22::t_39e12f919aafed 53,76-106
+  s_cfd50270b2eb22::t_72177c4ba01a7f 27,43-44,50-52,55-62,72-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "dfa7a3f29d0f9d1e0602d28044227efe204b1566",
+  "prompts": {},
+  "humans": {
+    "h_b00006bbf0b134": {
+      "author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  },
+  "sessions": {
+    "s_cfd50270b2eb22": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a18c4e-74b5-7550-a106-5479c9ebf310",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
