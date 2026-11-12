@@ -1,0 +1,30 @@
+fe/fe-core/src/test/java/org/apache/doris/qe/StmtExecutorInternalQueryTest.java
+  s_0759bd3befd609::t_53b01a4264d005 22,25,28,36-38,45,49-52,55-138
+  s_0759bd3befd609::t_1c29d13213a79a 24,29
+fe/fe-core/src/main/java/org/apache/doris/plugin/AuditEvent.java
+  s_0759bd3befd609::t_78822ac90d8834 178-189
+fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java
+  s_0759bd3befd609::t_78822ac90d8834 219-220,609-612,2321-2323
+fe/fe-core/src/main/java/org/apache/doris/qe/AuditLogHelper.java
+  s_0759bd3befd609::t_78822ac90d8834 423
+  s_0759bd3befd609::t_cad3bc21a8de2b 419-422
+  s_0759bd3befd609::t_ccc6a6f9690e5c 52
+fe/fe-core/src/main/java/org/apache/doris/resource/workloadschedpolicy/WorkloadRuntimeStatusMgr.java
+  s_0759bd3befd609::t_78822ac90d8834 92,197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "3bb93329e24d1e51970dd6d3da9482694afd76fd",
+  "prompts": {},
+  "sessions": {
+    "s_0759bd3befd609": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a18b89-7882-7f33-b4d5-e26532a886b7",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
