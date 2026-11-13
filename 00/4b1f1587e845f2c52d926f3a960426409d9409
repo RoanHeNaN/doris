@@ -1,0 +1,19 @@
+be/test/storage/index/ann/faiss_unbounded_hnsw_range_search_test.cpp
+  s_56ed75487e35c7::t_f49b8cf9134d4d 1-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "004b1f1587e845f2c52d926f3a960426409d9409",
+  "prompts": {},
+  "sessions": {
+    "s_56ed75487e35c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d1bd3541-f1d2-4ad2-8443-f8e0527a28eb",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
