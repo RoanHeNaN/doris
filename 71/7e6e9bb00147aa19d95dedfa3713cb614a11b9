@@ -1,0 +1,27 @@
+be/src/storage/iterator/vgeneric_iterators.cpp
+  s_433e3ec9128105::t_885c177d2dcb5b 30
+  s_433e3ec9128105::t_5d2aa96ac0c81a 153-167
+regression-test/suites/query_p0/virtual_slot_ref/topn_virtual_slot_on_overlapping_segments.groovy
+  s_433e3ec9128105::t_92d1c11e1607e5 20-147
+  s_433e3ec9128105::t_00ddd05db0d225 17-19
+  s_433e3ec9128105::t_f9b31058617b11 148
+  s_433e3ec9128105::t_c7e17d30cfdc61 1-16
+regression-test/data/query_p0/virtual_slot_ref/topn_virtual_slot_on_overlapping_segments.out
+  s_433e3ec9128105::t_b6626827dffb42 1-133
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "717e6e9bb00147aa19d95dedfa3713cb614a11b9",
+  "prompts": {},
+  "sessions": {
+    "s_433e3ec9128105": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "760ce8ad-f263-4901-9e5b-056ce5985cc5",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "zhiqiang-hhhh <seuhezhiqiang@163.com>"
+    }
+  }
+}
