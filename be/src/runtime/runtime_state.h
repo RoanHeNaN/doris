@@ -294,11 +294,11 @@ public:
             // Create a error status, so that we could print error stack, and
             // we could know which path call cancel.
             LOG(WARNING) << "Task is cancelled, instance: "
-                         << PrintInstanceStandardInfo(_query_id, _fragment_instance_id)
+                         << print_instance_standard_info(_query_id, _fragment_instance_id)
                          << ", st = " << reason;
         } else {
             LOG(WARNING) << "Task is already cancelled, instance: "
-                         << PrintInstanceStandardInfo(_query_id, _fragment_instance_id)
+                         << print_instance_standard_info(_query_id, _fragment_instance_id)
                          << ", original cancel msg: " << _exec_status.status()
                          << ", new cancel msg: " << reason;
         }

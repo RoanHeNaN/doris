@@ -123,7 +123,7 @@ void ExecEnv::update_frontends(const std::vector<TFrontendInfo>& new_fe_infos) {
         auto itr = _frontends->find(coming_fe_info.coordinator_address);
 
         if (itr == _frontends->end()) {
-            LOG(INFO) << "A completely new frontend, " << PrintFrontendInfo(coming_fe_info);
+            LOG(INFO) << "A completely new frontend, " << print_frontend_info(coming_fe_info);
 
             _frontends->insert(std::pair<TNetworkAddress, FrontendInfo>(
                     coming_fe_info.coordinator_address,
@@ -136,7 +136,7 @@ void ExecEnv::update_frontends(const std::vector<TFrontendInfo>& new_fe_infos) {
         dropped_fes.erase(coming_fe_info.coordinator_address);
 
         if (coming_fe_info.process_uuid == 0) {
-            LOG(WARNING) << "Frontend " << PrintFrontendInfo(coming_fe_info)
+            LOG(WARNING) << "Frontend " << print_frontend_info(coming_fe_info)
                          << " is in an unknown state.";
         }
 
@@ -149,11 +149,11 @@ void ExecEnv::update_frontends(const std::vector<TFrontendInfo>& new_fe_infos) {
         itr->second.info.process_uuid = coming_fe_info.process_uuid;
         itr->second.first_receiving_time_ms = GetCurrentTimeMicros() / 1000;
         itr->second.last_reveiving_time_ms = GetCurrentTimeMicros() / 1000;
-        LOG(INFO) << "Update frontend " << PrintFrontendInfo(coming_fe_info);
+        LOG(INFO) << "Update frontend " << print_frontend_info(coming_fe_info);
     }
 
     for (const auto& dropped_fe : dropped_fes) {
-        LOG(INFO) << "Frontend " << PrintThriftNetworkAddress(dropped_fe)
+        LOG(INFO) << "Frontend " << print_thrift_network_address(dropped_fe)
                   << " has already been dropped, remove it";
         _frontends->erase(dropped_fe);
     }

@@ -2412,7 +2412,7 @@ void PipelineFragmentContext::_coordinator_callback(const ReportStatusRequest& r
         UniqueId uid(req.query_id.hi, req.query_id.lo);
         static_cast<void>(req.cancel_fn(Status::InternalError(
                 "query_id: {}, couldn't get a client for {}, reason is {}", uid.to_string(),
-                PrintThriftNetworkAddress(req.coord_addr), coord_status.to_string())));
+                print_thrift_network_address(req.coord_addr), coord_status.to_string())));
         if (req.done) {
             req.runtime_state->finalize_external_file_report_cleanup(
                     ExternalFileReportOutcome::REJECTED);
@@ -2598,7 +2598,7 @@ void PipelineFragmentContext::_coordinator_callback(const ReportStatusRequest& r
     } catch (apache::thrift::TException& e) {
         report_outcome_ambiguous = true;
         rpc_status = Status::InternalError("ReportExecStatus() to {} failed: {}",
-                                           PrintThriftNetworkAddress(req.coord_addr), e.what());
+                                           print_thrift_network_address(req.coord_addr), e.what());
     }
 
     const bool requires_external_file_ack =

@@ -154,13 +154,13 @@ void init_be_version_metrics() {
     static_cast<void>(initialized);
 }
 
-std::string PrintThriftNetworkAddress(const TNetworkAddress& add) {
+std::string print_thrift_network_address(const TNetworkAddress& add) {
     std::stringstream ss;
     add.printTo(ss);
     return ss.str();
 }
 
-std::string PrintFrontendInfos(const std::vector<TFrontendInfo>& fe_infos) {
+std::string print_frontend_infos(const std::vector<TFrontendInfo>& fe_infos) {
     std::stringstream ss;
     const size_t count = fe_infos.size();
 
@@ -172,13 +172,13 @@ std::string PrintFrontendInfos(const std::vector<TFrontendInfo>& fe_infos) {
     return ss.str();
 }
 
-std::string PrintFrontendInfo(const TFrontendInfo& fe_info) {
+std::string print_frontend_info(const TFrontendInfo& fe_info) {
     std::stringstream ss;
     fe_info.printTo(ss);
     return ss.str();
 }
 
-std::string PrintInstanceStandardInfo(const TUniqueId& qid, const TUniqueId& iid) {
+std::string print_instance_standard_info(const TUniqueId& qid, const TUniqueId& iid) {
     return fmt::format("{}|{}", print_id(qid), print_id(iid));
 }
 

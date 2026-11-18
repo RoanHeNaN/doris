@@ -77,7 +77,7 @@ void HeartbeatServer::heartbeat(THeartbeatResult& heartbeat_result,
                           << "host:" << master_info.network_address.hostname
                           << ", rpc port:" << master_info.network_address.port
                           << ", cluster id:" << master_info.cluster_id
-                          << ", frontend_info:" << PrintFrontendInfos(master_info.frontend_infos)
+                          << ", frontend_info:" << print_frontend_infos(master_info.frontend_infos)
                           << ", counter:" << google::COUNTER << ", BE start time: " << _be_epoch;
 
     MonotonicStopWatch watch;
@@ -109,7 +109,7 @@ void HeartbeatServer::heartbeat(THeartbeatResult& heartbeat_result,
                      << ", host:" << master_info.network_address.hostname
                      << ", port:" << master_info.network_address.port
                      << ", cluster id:" << master_info.cluster_id
-                     << ", frontend_info:" << PrintFrontendInfos(master_info.frontend_infos)
+                     << ", frontend_info:" << print_frontend_infos(master_info.frontend_infos)
                      << ", counter:" << google::COUNTER << ", BE start time: " << _be_epoch;
     }
 }
@@ -127,15 +127,15 @@ Status HeartbeatServer::_heartbeat(const TMasterInfo& master_info) {
         LOG(INFO) << "record cluster id. host: " << master_info.network_address.hostname
                   << ". port: " << master_info.network_address.port
                   << ". cluster id: " << master_info.cluster_id
-                  << ". frontend_infos: " << PrintFrontendInfos(master_info.frontend_infos);
+                  << ". frontend_infos: " << print_frontend_infos(master_info.frontend_infos);
     } else {
         if (_cluster_info->cluster_id != master_info.cluster_id) {
             return Status::InternalError(
                     "invalid cluster id. ignore. Record cluster id ={}, record frontend info {}. "
                     "Invalid cluster_id={}, invalid frontend info {}",
                     _cluster_info->cluster_id,
-                    PrintFrontendInfos(ExecEnv::GetInstance()->get_frontends()),
-                    master_info.cluster_id, PrintFrontendInfos(master_info.frontend_infos));
+                    print_frontend_infos(ExecEnv::GetInstance()->get_frontends()),
+                    master_info.cluster_id, print_frontend_infos(master_info.frontend_infos));
         }
     }
 

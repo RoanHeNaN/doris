@@ -61,7 +61,7 @@ static Status _do_report_exec_stats_rpc(const TNetworkAddress& coor_addr,
         LOG_WARNING(
                 "Could not get client rpc client of {} when reporting profiles, reason is {}, "
                 "not reporting, profile will be lost",
-                PrintThriftNetworkAddress(coor_addr), client_status.to_string());
+                print_thrift_network_address(coor_addr), client_status.to_string());
         return Status::RpcError("Client rpc client failed");
     }
 
@@ -72,7 +72,7 @@ static Status _do_report_exec_stats_rpc(const TNetworkAddress& coor_addr,
             rpc_client->reportExecStatus(res, req);
         } catch (const apache::thrift::transport::TTransportException& e) {
             LOG_WARNING("Transport exception from {}, reason: {}, reopening",
-                        PrintThriftNetworkAddress(coor_addr), e.what());
+                        print_thrift_network_address(coor_addr), e.what());
             client_status = rpc_client.reopen(config::thrift_rpc_timeout_ms);
             if (!client_status.ok()) {
                 LOG_WARNING("Reopen failed, reason: {}", client_status.to_string());
@@ -86,17 +86,17 @@ static Status _do_report_exec_stats_rpc(const TNetworkAddress& coor_addr,
             LOG_WARNING(
                     "Failed to report query profile to {} due to {}, usually because the frontend "
                     "is not upgraded, check the version",
-                    PrintThriftNetworkAddress(coor_addr), e.what());
+                    print_thrift_network_address(coor_addr), e.what());
         } else {
             LOG_WARNING(
                     "Failed to report query profile to {}, reason: {}, you can see fe log for "
                     "details.",
-                    PrintThriftNetworkAddress(coor_addr), e.what());
+                    print_thrift_network_address(coor_addr), e.what());
         }
         return Status::RpcError("Send stats failed");
     } catch (apache::thrift::TException& e) {
         LOG_WARNING("Failed to report query profile to {}, reason: {} ",
-                    PrintThriftNetworkAddress(coor_addr), e.what());
+                    print_thrift_network_address(coor_addr), e.what());
         std::this_thread::sleep_for(
                 std::chrono::milliseconds(config::thrift_client_retry_interval_ms * 2));
         // just reopen to disable this connection
@@ -105,7 +105,7 @@ static Status _do_report_exec_stats_rpc(const TNetworkAddress& coor_addr,
     } catch (std::exception& e) {
         LOG_WARNING(
                 "Failed to report query profile to {}, reason: {}, you can see fe log for details.",
-                PrintThriftNetworkAddress(coor_addr), e.what());
+                print_thrift_network_address(coor_addr), e.what());
         return Status::RpcError("Send report query profile failed");
     }
 
@@ -157,7 +157,7 @@ static void _report_query_profiles_function(
 
         if (res.status.status_code != TStatusCode::OK || !rpc_status.ok()) {
             LOG_WARNING("Query {} send profile to {} failed", print_id(query_id),
-                        PrintThriftNetworkAddress(coor_addr));
+                        print_thrift_network_address(coor_addr));
         } else {
             VLOG_CRITICAL << fmt::format("Send {} profile succeed", print_id(query_id));
         }
@@ -388,7 +388,7 @@ void RuntimeQueryStatisticsMgr::report_runtime_query_statistics() {
         Status coord_status;
         FrontendServiceConnection coord(ExecEnv::GetInstance()->frontend_client_cache(), addr,
                                         config::thrift_rpc_timeout_ms, &coord_status);
-        std::string add_str = PrintThriftNetworkAddress(addr);
+        std::string add_str = print_thrift_network_address(addr);
         if (!coord_status.ok()) {
             std::stringstream ss;
             LOG(WARNING) << "[report_query_statistics]could not get client " << add_str

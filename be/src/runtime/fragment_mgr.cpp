@@ -157,10 +157,10 @@ static Status _do_fetch_running_queries_rpc(const FrontendInfo& fe_info,
     // Abort this fe.
     if (!client_status.ok()) {
         LOG_WARNING("Failed to get client for {}, reason is {}",
-                    PrintThriftNetworkAddress(fe_info.info.coordinator_address),
+                    print_thrift_network_address(fe_info.info.coordinator_address),
                     client_status.to_string());
         return Status::InternalError("Failed to get client for {}, reason is {}",
-                                     PrintThriftNetworkAddress(fe_info.info.coordinator_address),
+                                     print_thrift_network_address(fe_info.info.coordinator_address),
                                      client_status.to_string());
     }
 
@@ -182,25 +182,25 @@ static Status _do_fetch_running_queries_rpc(const FrontendInfo& fe_info,
     } catch (apache::thrift::TException& e) {
         // During upgrading cluster or meet any other network error.
         LOG_WARNING("Failed to fetch running queries from {}, reason: {}",
-                    PrintThriftNetworkAddress(fe_info.info.coordinator_address), e.what());
+                    print_thrift_network_address(fe_info.info.coordinator_address), e.what());
         return Status::InternalError("Failed to fetch running queries from {}, reason: {}",
-                                     PrintThriftNetworkAddress(fe_info.info.coordinator_address),
+                                     print_thrift_network_address(fe_info.info.coordinator_address),
                                      e.what());
     }
 
     // Avoid logic error in frontend.
     if (!rpc_result.__isset.status || rpc_result.status.status_code != TStatusCode::OK) {
         LOG_WARNING("Failed to fetch running queries from {}, reason: {}",
-                    PrintThriftNetworkAddress(fe_info.info.coordinator_address),
+                    print_thrift_network_address(fe_info.info.coordinator_address),
                     doris::to_string(rpc_result.status.status_code));
         return Status::InternalError("Failed to fetch running queries from {}, reason: {}",
-                                     PrintThriftNetworkAddress(fe_info.info.coordinator_address),
+                                     print_thrift_network_address(fe_info.info.coordinator_address),
                                      doris::to_string(rpc_result.status.status_code));
     }
 
     if (!rpc_result.__isset.running_queries) {
         return Status::InternalError("Failed to fetch running queries from {}, reason: {}",
-                                     PrintThriftNetworkAddress(fe_info.info.coordinator_address),
+                                     print_thrift_network_address(fe_info.info.coordinator_address),
                                      "running_queries is not set");
     }
 
